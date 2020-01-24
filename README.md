@@ -5,8 +5,8 @@ Real-time Analytics on Paris' Velibs
 
 You can open the [Jupyter](http://jupyter.org/) notebooks with :
 
-* Using [jupyter.org's notebook viewer](http://nbviewer.jupyter.org/github/collardm/real-time-velib-analysis/Paris-Velibs-Analysis.ipynb)
-    * note: [github.com's notebook viewer](https://github.com/collardm/real-time-velib-analysis/Paris-Velibs-Analysis.ipynb) also works but it is slower and the math formulas are not displayed correctly,
+* Using [jupyter.org's notebook viewer](http://nbviewer.jupyter.org/github/collardm/real-time-velib-analysis/blob/master/Paris-Velibs-Analysis.ipynb)
+    * note: [github.com's notebook viewer](https://github.com/collardm/real-time-velib-analysis/blob/master/Paris-Velibs-Analysis.ipynb) also works but it is slower and the math formulas are not displayed correctly,
 * by cloning this repository and running Jupyter locally. This option lets you play around with the code. In this case, follow the installation instructions below,
 * or by running the notebooks in [Deepnote](https://beta.deepnote.com). This allows you to play around with the code online in your browser. For example, here's a link to the first chapter: [<img height="22"  src="https://beta.deepnote.com/buttons/launch-in-deepnote.svg">](https://)
 
