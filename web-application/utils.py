@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-from flask import Flask, render_template, flash, request
-import logging, io, base64, os, datetime
-from datetime import timedelta
 import os
 import json
 import time
@@ -10,11 +6,6 @@ import requests
 import numpy as np
 import pandas as pd
 from folium.plugins import MarkerCluster
-
-# global variables
-velib_op = None
-
-app = Flask(__name__)
 
 def LoadData():
     """Load velib data from opendata API
@@ -84,24 +75,3 @@ def BuildMap(velib_op):
     m.save("C:/Users/maxen/OneDrive - DXC Production/Industrialized AI Open Badge Boot Camp/3 Build AI Data Pipelines/real-time-velib/real-time-velib-analysis/web-application/templates/map.html")
 
     return
-
-@app.before_first_request
-def startup():
-    global velib_op
-
-    # prepare velib data
-    velib_op = LoadData()
-
-
-
-@app.route("/")
-def index():
-    BuildMap(velib_op)
-
-    return render_template('index.html')
-
-
-
-if __name__=='__main__':
-
-    app.run(debug=True)
