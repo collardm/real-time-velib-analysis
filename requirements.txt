@@ -32,7 +32,7 @@
 
 ##### Core packages
 
-numpy==1.18.1
+numpy==1.22.0
 scipy==1.4.1
 pandas==0.25.3 
 matplotlib==3.1.2 
